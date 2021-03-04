@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haruki Murakami</title>
+    <style>
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Ubuntu, Calibri, sans-serif;
+    }
+
+    img{
+      height: auto;
+      float: right;
+      margin:15px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin:0;
+        padding-left:0;
+        width:200px;
+        background-color:#829595;
+        border:2px solid #D5DCDC;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    li {
+        text-align:center;
+        border-bottom:2px solid #D5DCDC;
+    }
+
+    li:last-child {
+        border-bottom: none;
+    }
+
+    li a.active {
+        background-color: #4e6969;
+        color: white;
+    }
+
+    li a:hover:not(.active) {
+        background-color: darkslategray;
+        color: white;
+    }
+
+    .header{
+      background-color: darkslategray;
+      color: white;
+      padding:10px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .flex{
+      display:flex;
+    }
+
+    .side{
+      flex:1;
+    }
+
+    .main{
+      flex:6;
+    }
+
+    .flex>div{
+      background-color: #D5DCDC;
+      text-align: center;
+      padding: 0 0;
+      font-size: 22px;
+      min-height: 500px;
+    }
+
+    @media only screen and (max-width:600px){
+      .flex{
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+      .flex>div{
+        min-height:400px;
+        color:black;
+      }
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Haruki Murakami</h1>
+    </div>
+    <div class="flex">
+    <div class="side">
+      <ul>
+        <li><a href="page_1.html">Book synopsis</a></li>
+        <li><a class="active" href="page_2.html">The author</a></li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <img src="images/murakami.jpg" alt="Harkuki Murakami" width="260px" height="360px">
+      <p>Haruki Murakami is a Japanese writer born in Kyoto in 1949. His books
+        and stories have been bestsellers in Japan as well as internationally,
+        with his work being translated into 50 languages. His work has received
+        numerous awards, including the World Fantasy Award, the Frank O'Connor
+        International Short Story Award, the Franz Kafka Prize, and the Jerusalem Prize.</p>
+
+      <p>Murakami's most notable works include A Wild Sheep Chase (1982),
+        Norwegian Wood, The Wind-Up Bird Chronicle, Kafka on the Shore, and 1Q84.
+        Most of Haruki Murakami's works use first person narrative in the tradition
+        of the Japanese I Novel. He states that because family plays a significant
+        role in traditional Japanese literature, any main character who is
+        independent becomes a man who values freedom and solitude over intimacy.
+        Many of his novels have themes and titles that evoke classical music,
+        such as the three books making up The Wind-Up Bird Chronicle: The Thieving Magpie (after Rossini's opera),
+        Bird as Prophet (after a piano piece by Robert Schumann usually known in
+        English as The Prophet Bird), and The Bird-Catcher (a character in Mozart's
+        opera The Magic Flute).</p>
+    </div>
+  </div>
+
+
+  </body>
+</html>

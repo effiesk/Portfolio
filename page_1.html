@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Colorless Tsukuru Tazaki and his years of pilgrimage</title>
+    <style>
+
+    .item1 { grid-area: header; }
+    .item2 { grid-area: menu;}
+    .item3 { grid-area: main; }
+
+    img {height: auto;
+         float:right;
+         margin: 15px;}
+
+    ul {
+        list-style-type: none;
+        margin:0;
+        padding-left:0;
+        width:200 px;
+        background-color:#829595;
+        border:#D5DCDC;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    li {
+        text-align:center;
+        border-bottom:2px solid #D5DCDC;
+    }
+
+    li:last-child {
+        border-bottom: none;
+    }
+
+    li a.active {
+        background-color: #4e6969;
+        color: white;
+    }
+
+    li a:hover:not(.active) {
+        background-color: darkslategray;
+        color: white;
+    }
+
+    .gridcontainer {
+      display: grid;
+      grid-template-areas:
+    'header header header header header header'
+    'menu menu main main main main'
+    'menu menu main main main main';
+      grid-gap: 2px;
+      background-color: #D5DCDC;
+      padding: 10px;
+      font-family: Ubuntu, Calibri, sans-serif;
+    }
+
+    .gridcontainer>div{
+      text-align: center;
+      padding: 0 0;
+      font-size:22px;
+    }
+
+    .item1{
+      background-color: darkslategray;
+      color: white;
+      padding:10px;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 500px) {
+     .gridcontainer {
+      display: grid;
+     grid-template-areas:
+       'header header'
+       'menu menu'
+       'main main';
+     grid-gap: 2px;
+     padding: 5px;
+   }
+        .gridcontainer > div {
+     text-align: center;
+     padding: 0 0;
+     font-size: 20px;
+   }
+
+   }
+
+    </style>
+
+  </head>
+
+  <body>
+  <div class="gridcontainer">
+    <div class="item1">
+      <h1>Colorless Tsukuru Tazaki and his years of pilgrimage</h1>
+      <h2>A novel by Haruki Murakami</h2>
+    </div>
+
+    <div class="item2">
+      <ul>
+        <li><a class="active" href="page_1.html">Book synopsis</a></li>
+        <li><a href="page_2.html">The author</a></li>
+      </ul>
+    </div>
+
+    <div class="item3">
+      <img src="images/bookcover.jpg" alt="Colorless Tsukuru Tazakii and his
+           years of pilgrimage book cover" width="260px" height="400px">
+      <p>In the early 1990s in his home town of Nagoya, the young Tsukuru was a
+        fan of train stations. In high school, the two boys and two girls that
+        were his four best friends all had a color as part of their surnames,
+        leaving him the &quot;colorless&quot; one of their &quot;orderly, harmonious community&quot;.
+        But one day in 1995, during his second year in college, his friends
+        abruptly cut all relationships with him. That never-explained, Kafkaesque
+        ostracism left him feeling suicidal then guilty &quot;as an empty person,
+        lacking in color and identity&quot;; and when his only college friend vanished
+        the next semester, he felt &quot;fated to always be alone&quot;.</p>
+
+      <p>Now in 2011's Tokyo, the 36-year-old engineer Tazaki works for a railroad
+        company and builds stations. His new girlfriend Sara spurs him &quot;to come
+        face-to-face with the past, not as some naive, easily wounded boy, but
+        as a grown-up&quot; and seek his former friends to mend the relationships and
+        find out why they rejected him, because she won't commit to him unless
+        he can move past that issue. And so he will visit them one by one, first
+        back in Nagoya, then in rural Finland, on a quest for truth and a
+        pilgrimage for happiness.</p>
+    </div>
+  </div>
+
+
+  </body>
+</html>
